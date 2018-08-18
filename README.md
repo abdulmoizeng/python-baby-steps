@@ -52,3 +52,7 @@ python step6/index.py
 ### Step 6
 
 - Basic object oriented
+
+### Contributions
+
+Contributions are always welcome. Feel free to add your python related snippets under their respective steps and giving PRs.
