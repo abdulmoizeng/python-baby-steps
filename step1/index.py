@@ -88,6 +88,28 @@ new_tuple = tuple(new_list)
 len(pi_tuple)
 max(pi_tuple)
 min(pi_tuple)
+nested_tuple = ('A', (1, 2), 'B', ('a', 'b'))
+print(nested_tuple[1]) # (1,2)
+social_profiles = (
+    ('Twitter', 'data'),
+    ('Facebook', 'data'),
+    ('Google', 'data')
+)
+print(dict(social_profiles)) # we can only convert length 2 tuple into direct dictionary
+social_profiles = (
+    ('Twitter', 'data1', 'data2'),
+    ('Facebook', 'data1', 'data2', 'data3'),
+    ('Google', 'data1', 'data2', 'data3', '.....')
+)
+# ^ Converting above to dictionary will generate error, following is the right way to structure this data 
+social_profiles = (
+    ('Twitter', ['data1', 'data2']),
+    ('Facebook', ['data1', 'data2', 'data3']),
+    ('Google', ['data1', 'data2', 'data3', '.....'])
+)
+print(dict(social_profiles))
+# converting tuple to dictionary
+
 # *****************                     ********************
 
 
