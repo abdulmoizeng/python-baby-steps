@@ -53,6 +53,10 @@ python step6/index.py
 
 - Basic object oriented
 
+### Step 7
+
+- Python debugging tools
+
 ### Contributions
 
 Contributions are always welcome. Feel free to add your python related snippets under their respective steps and giving PRs.
