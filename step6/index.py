@@ -70,4 +70,38 @@ print(dog.get_weight())
 print(dog.get_sound())
 dog.set_owner('Donald Trump')
 print(dog.get_owner())
+
+# @property decorator
+class Employee(object):
+    
+    def __init__(self, first_name, last_name, id):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.id = id
+    
+    @property
+    def full_name(self):
+        return "{} {}".format(self.first_name, self.last_name)
+    
+    @full_name.setter
+    def full_name(self, full_name):
+        self.first_name, self.last_name = full_name.split(' ')
+    
+    @full_name.deleter
+    def full_name(self):
+        self.first_name = None
+        self.last_name = None
+        print('Full Name deleted')
+
+
+emp1 = Employee(first_name='Osama', last_name='bashir', id=1)
+print(emp1.full_name)
+
+emp1.full_name = 'Osama Bashir'
+print(emp1.full_name)
+
+del emp1.full_name
+print(emp1.full_name)
+
 # *****************                     ***********************
+
