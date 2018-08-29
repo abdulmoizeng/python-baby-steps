@@ -72,6 +72,13 @@ dog.set_owner('Donald Trump')
 print(dog.get_owner())
 
 # Abstract Class
+"""
+Abstract Base Classes or ABCs are the classes that contains at least one or more abstract methods. Initially
+there was no support for such classes in Python but in Python 3.0 they added a package called abc to make
+Abstract classes.
+"""
+
+
 from abc import ABCMeta, abstractmethod
 
 
@@ -157,7 +164,7 @@ print(emp1.full_name)
 emp1.full_name = 'Osama Bashir'
 print(emp1.full_name)
 
-del emp1.full_name
+del emp1.full_name # del keyword is use for removing or to de-init an object from memory.
 print(emp1.full_name)
 
 # *****************                     ***********************
