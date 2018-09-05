@@ -71,6 +71,70 @@ print(dog.get_sound())
 dog.set_owner('Donald Trump')
 print(dog.get_owner())
 
+# Abstract Class
+"""
+Abstract Base Classes or ABCs are the classes that contains at least one or more abstract methods. Initially
+there was no support for such classes in Python but in Python 3.0 they added a package called abc to make
+Abstract classes.
+"""
+
+
+from abc import ABCMeta, abstractmethod
+
+
+class AbstractHuman:
+    
+    @abstractmethod
+    def __init__(self, name):
+        self.name = name
+    
+    @abstractmethod
+    def type(self):pass
+    
+    @abstractmethod
+    def introduction(self):
+        print('Hello All')
+    
+    @abstractmethod
+    def set_name(self, name): pass
+    
+    @abstractmethod
+    def get_name(self): pass
+    
+    __metaclass__ = ABCMeta
+    
+    name = property(get_name, set_name)
+
+
+class Man(AbstractHuman):
+    
+    def __init__(self, name):
+        self._name = name
+    
+    def name(self):
+        return self.name
+    
+    def type(self):
+        print("I am a Man")
+    
+    def introduction(self):
+        super(Man, self).introduction()
+        print("My name is {} . I am a man ".format(self.name))
+    
+    def set_name(self, name):
+        self._name = name
+    
+    def get_name(self):
+        return self._name
+    
+    name = property(get_name, set_name)
+
+
+osama = Man(name="Osama")
+
+osama.type()
+osama.introduction()
+
 # @property decorator
 class Employee(object):
     
@@ -100,8 +164,7 @@ print(emp1.full_name)
 emp1.full_name = 'Osama Bashir'
 print(emp1.full_name)
 
-del emp1.full_name
+del emp1.full_name # del keyword is use for removing or to de-init an object from memory.
 print(emp1.full_name)
 
 # *****************                     ***********************
-
