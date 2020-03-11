@@ -1,4 +1,4 @@
-fruits_name = ['Apples', 'Bananas', 'Oranges', 'Grapes']
+ fruits_name = ['Apples', 'Bananas', 'Oranges', 'Grapes']
 fruits_prices = [40, 10, 50, 12]
 
 #print all the fruits name
