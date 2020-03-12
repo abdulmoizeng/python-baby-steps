@@ -1,3 +1,4 @@
+
 # Python baby steps | learn faster 
 ​✪ Find quick code snippets to learn basic Python, try going through each steps run the code and learn cool stuff. its highly recommended to run snippets separately and observe its behaviour for clearing concepts.
 ​
@@ -23,6 +24,8 @@ python step5/index.py
 # for running step6
 python step6/index.py 
 
+# for running fun_with_sockets, 
+Read fun_with_sockets/README.md
 ```
 
 ### Step 1
@@ -44,6 +47,7 @@ python step6/index.py
 
 - Functions the basic building blocks
 - A look at string manipulation and cli based programming
+- A basic lambda function implementation 
 
 ### Step 5
 
@@ -56,6 +60,10 @@ python step6/index.py
 ### Step 7
 
 - Python debugging tools
+
+### Fun with sockets in Python
+- Simple socket implementing Handshake via TCP IPV4
+- Multi connection socket.
 
 ### Contributions
 
