@@ -60,3 +60,16 @@ print(some_str.replace('bus', 'plane'))
 print(some_str.strip())  # remove white space
 print(some_str.split())  # split into a list of words => ["i'll", 'catch', 'the', 'bus!']
 # *****************                     *********************
+
+# ***************** Lambda Functions    *********************
+def lfunc(a):
+    # lambda argument : expression
+    return lambda c : c * a
+
+# using a lambda function to double and triple.
+myDoubler = lfunc(2)
+myTripler = lfunc(3)
+
+# invoking the function
+print("Doubling 2 :", myDoubler(2))
+print("Tripling 2 :", myTripler(2))
