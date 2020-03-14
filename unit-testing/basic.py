@@ -19,7 +19,7 @@ def wrong_addition(a, b):
     return a + 1 + b
 
 
-class TestAddition(unittest.TestCase):
+class Testing(unittest.TestCase):
     def test_addition(self):
         self.assertEqual(addition(2, 4), 6, "2 + 4 should result in 6")
 
