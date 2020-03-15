@@ -84,6 +84,8 @@ Read basic-jinja/README.md
 - Introduction to templates
 - A minimal flask app implementing the idea of Templating
 
+#### Some fun challenges are awaiting in the /challenges directory.
+
 ### Contributions
 
 Contributions are always welcome. Feel free to add your python related snippets under their respective steps and giving PRs.
