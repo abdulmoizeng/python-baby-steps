@@ -67,7 +67,12 @@ Read basic-jinja/README.md
 
 - Python debugging tools
 
-### Fun with sockets in Python
+
+### Extra activities for Python lovers
+
+
+#### Fun with Sockets
+
 - Simple socket implementing Handshake via TCP IPV4
 - Multi connection socket.
 
