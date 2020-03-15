@@ -33,6 +33,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "osama10",
+      "name": "Osama Bin Bashir",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/16986112?v=4",
+      "profile": "https://medium.com/@osamabinbashir",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "projectName": "python-baby-steps",
