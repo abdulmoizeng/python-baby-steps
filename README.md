@@ -76,11 +76,11 @@ Read basic-jinja/README.md
 - Simple socket implementing Handshake via TCP IPV4
 - Multi connection socket.
 
-### Basic unit testing 
+#### Basic unit testing 
 - Basic test case for addition and subtraction
 - implementation of the built in library `unittest`
 
-### Basic jinja templating
+#### Basic jinja templating
 - Introduction to templates
 - A minimal flask app implementing the idea of Templating
 
