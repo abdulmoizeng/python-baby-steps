@@ -87,3 +87,6 @@ Read basic-jinja/README.md
 ### Contributions
 
 Contributions are always welcome. Feel free to add your python related snippets under their respective steps and giving PRs.
+
+If there's anything that you think needs to be a part of this awesome repo, feel free to create an issue with the topic.
+
