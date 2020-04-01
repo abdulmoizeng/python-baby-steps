@@ -1,4 +1,4 @@
-# **********         Object Oriented             **************
+# Object Oriented Programming in Python
 class Animal:
     __name = ''
     __height = 0
@@ -51,15 +51,20 @@ print(cat.get_sound())
 
 class Dog(Animal):
     __owner = ''
+
     def __init__(self, name, height, weight, sound, owner):
         self.owner = owner
         super(Dog, self).__init__(name, height, weight, sound)
+
     def set_owner(self, owner):
         self.owner = owner
+
     def get_owner(self):
         return self.owner
+
     def info(self):
-        print("{} is {} cm tall and {} kg and say {}. Owned by {}.".format(self.name, self.height, self.weight, self.sound, self.owner))
+        print("{} is {} cm tall and {} kg and say {}. Owned by {}.".format(self.name, self.height, self.weight,
+                                                                           self.sound, self.owner))
 
 
 dog = Dog('Tommy', 40, 15, 'Bark', 'Obama')
@@ -78,55 +83,54 @@ there was no support for such classes in Python but in Python 3.0 they added a p
 Abstract classes.
 """
 
-
 from abc import ABCMeta, abstractmethod
 
 
 class AbstractHuman:
-    
+
     @abstractmethod
     def __init__(self, name):
         self.name = name
-    
+
     @abstractmethod
-    def type(self):pass
-    
+    def type(self): pass
+
     @abstractmethod
     def introduction(self):
         print('Hello All')
-    
+
     @abstractmethod
     def set_name(self, name): pass
-    
+
     @abstractmethod
     def get_name(self): pass
-    
+
     __metaclass__ = ABCMeta
-    
+
     name = property(get_name, set_name)
 
 
 class Man(AbstractHuman):
-    
+
     def __init__(self, name):
         self._name = name
-    
+
     def name(self):
         return self.name
-    
+
     def type(self):
         print("I am a Man")
-    
+
     def introduction(self):
         super(Man, self).introduction()
         print("My name is {} . I am a man ".format(self.name))
-    
+
     def set_name(self, name):
         self._name = name
-    
+
     def get_name(self):
         return self._name
-    
+
     name = property(get_name, set_name)
 
 
@@ -135,22 +139,23 @@ osama = Man(name="Osama")
 osama.type()
 osama.introduction()
 
+
 # @property decorator
 class Employee(object):
-    
+
     def __init__(self, first_name, last_name, id):
         self.first_name = first_name
         self.last_name = last_name
         self.id = id
-    
+
     @property
     def full_name(self):
         return "{} {}".format(self.first_name, self.last_name)
-    
+
     @full_name.setter
     def full_name(self, full_name):
         self.first_name, self.last_name = full_name.split(' ')
-    
+
     @full_name.deleter
     def full_name(self):
         self.first_name = None
@@ -164,7 +169,5 @@ print(emp1.full_name)
 emp1.full_name = 'Osama Bashir'
 print(emp1.full_name)
 
-del emp1.full_name # del keyword is use for removing or to de-init an object from memory.
+del emp1.full_name  # del keyword is use for removing or to de-init an object from memory.
 print(emp1.full_name)
-
-# *****************                     ***********************

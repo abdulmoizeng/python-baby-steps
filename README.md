@@ -26,6 +26,12 @@ python step6/index.py
 
 # for running fun_with_sockets, 
 Read fun_with_sockets/README.md
+
+# for unit testing
+Read unit-testing/README.md
+
+# for basic templating with jinja
+Read basic-jinja/README.md
 ```
 
 ### Step 1
@@ -70,6 +76,19 @@ Read fun_with_sockets/README.md
 - Simple socket implementing Handshake via TCP IPV4
 - Multi connection socket.
 
+#### Basic unit testing 
+- Basic test case for addition and subtraction
+- implementation of the built in library `unittest`
+
+#### Basic jinja templating
+- Introduction to templates
+- A minimal flask app implementing the idea of Templating
+
+#### Some fun challenges are awaiting in the `/challenges` directory.
+
 ### Contributions
 
 Contributions are always welcome. Feel free to add your python related snippets under their respective steps and giving PRs.
+
+If there's anything that you think needs to be a part of this awesome repo, feel free to create an issue with the topic.
+
